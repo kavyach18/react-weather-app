@@ -1,0 +1,87 @@
+body {
+  font-family: Arial;
+  background-color: hsl(204, 33%, 61%);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weatherForm {
+  margin: 20px;
+}
+
+.cityInput { /*Styles the city input component*/
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: semi-bold;
+  border: none;
+  border-radius: 10px;
+  margin: 10px;
+  width: 300px;
+}
+
+button[type="submit"] { /*styles the submit button*/
+  padding: 10px;
+  font-weight: semi-bold;
+  font-size: 1rem;
+  background-color: rgb(96, 163, 179);
+  color: rgb(1, 13, 22);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover { /*whenever you click on submit button the color of the button changes.*/
+  background-color: rgb(128, 139, 139);
+}
+
+.card { /*styles the card where all the weather details are stored*/
+  background: linear-gradient(180deg, rgb(75, 156, 214), rgb(224, 221, 216));
+  padding: 50px;
+  box-shadow: 2px 2px 5px rgb(107, 105, 105);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.cityDisplay, /*Styles the displayed city and it's temparature*/
+.tempDisplay {
+  font-size: 3rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 25px;
+}
+
+.humidityDisplay { /*styles the city's humidity which is displayed*/
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.descDisplay { /*Styles the description of weather data*/
+  font-style: italic;
+  font-weight: bold;
+}
+
+.weatherEmoji { /*styles the weather emoji*/
+  margin: 0;
+  font-size: 7.5rem;
+}
+
+.errorDisplay { /*styles the error display message*/
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+}
